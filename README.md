@@ -16,7 +16,7 @@ This proposal suggests adopting a LoraWAN subregion config for max EIRP limit wh
 
 Helium aims to provide coverage as the people’s network and we are trying to help by restoring the coverage area in countries where the respective max EIRP limits are higher than the 16dBm (40mW) currently set for the entire AS923 region via PoCv11. It has since reduced the coverage area significantly and the effects can be seen clearly with a drop in the number of witnesses and witnessed by others before and after the implementation of PoCv11.
 
-For countries in AS923 region where their max EIRP limit is between 25-27dBm, we can expect to see an increase of coverage area probably close to the same level as prior to PoCv11 (as the previous hardcoded EIRP limit was 27dBm).
+For countries in AS923 region where their local regulatory max EIRP limit that's between 25-27dBm, we can expect to see an increase of coverage area probably close to the same level as prior to PoCv11 (as the previous hardcoded EIRP limit was 27dBm).
 
 This implementation can be extended to other regions as well (if required) 
 
@@ -24,7 +24,7 @@ This implementation can be extended to other regions as well (if required)
 # Stakeholders
 [stakeholders]: #stakeholders
 
-Hotspots in AS923 region where the local regulatory EIRP limit is higher than the current 16dBm EIRP limit set will benefit from this proposal. And this can be extended to regions that are affected.
+Hotspots owners in AS923 region where the local regulatory EIRP limit is higher than the current 16dBm EIRP limit set will benefit from this proposal. And this can be extended to regions that are affected.
 
 We have started to reach out to people in Helium discord regional channels: hk-hong-kong, id-indonesia, jp-japan, my-malaysia, ph-philippines, sg-singapore, th-thailand, tw-taiwan. 
 
@@ -53,7 +53,7 @@ TBD
 
 We have explored the possibility of including this as part of HIP45 as it is the closest HIP with regards to country-specific values.
 
-However considering that is addressing the frequency plan selection for different countries rather than max EIRP limits, it may further complicate things/the deployment process and might not be the best way to implement this hence we have drafted this new HIP for consideration/implementation.
+However, considering HIP45 is addressing the frequency plan selection for different countries rather than max EIRP limits, it may further complicate things/the deployment process and might not be the best way to implement this hence we have drafted this new HIP for consideration/implementation.
 
 # Unresolved Questions
 [unresolved]: #unresolved-questions
@@ -75,10 +75,14 @@ Describe how this design will be deployed and any potential impact it may have o
 current users of this project.
 
 - How will current users be impacted?
+The subregion config will be transparent to existing users just like PoCv11.
+Users in countries with local regulatory EIRP limits higher than 16dBm with the LoRaWan subregion max EIRP values defined will experience improved coverage in general.
 
 - How will existing documentation/knowlegebase need to be supported?
+There will be an update required to document this LoRaWAN subregion max EIRP limit for the impacted countries in each region
 
 - Is this backwards compatible?
+Yes
 
         - If not, what is the procedure to migrate?
 
@@ -88,9 +92,12 @@ current users of this project.
 What metrics can be used to measure the success of this design?
 
 - What should we measure to prove a performance increase?
+Increased in coverage area; Increase in number of witnesses and witnessed others with the same existing setup
 
 - What should we measure to prove an improvement in stability?
+Similar to how it is done with PoCv11
 
 - What should we measure to prove a reduction in complexity?
 
 - What should we measure to prove an acceptance of this by it's users?
+A poll perhaps
