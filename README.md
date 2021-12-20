@@ -92,12 +92,12 @@ Yes
 What metrics can be used to measure the success of this design?
 
 - What should we measure to prove a performance increase?
-Increased in coverage area; Increase in number of witnesses and witnessed others with the same existing setup
+ Increased in coverage area; Increase in number of witnesses and witnessed others with the same existing setup
 
 - What should we measure to prove an improvement in stability?
-Similar to how it is done with PoCv11
+ Similar to how it is done with PoCv11
 
 - What should we measure to prove a reduction in complexity?
 
 - What should we measure to prove an acceptance of this by it's users?
-A poll perhaps
+ A poll perhaps
