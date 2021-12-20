@@ -16,9 +16,9 @@ This proposal suggests adopting a LoraWAN subregion config for max EIRP limit wh
 
 Helium aims to provide coverage as the people’s network and we are trying to help by restoring the coverage area in countries where the respective max EIRP limits are higher than the 16dBm (40mW) currently set for the entire AS923 region via PoCv11. It has since reduced the coverage area significantly and the effects can be seen clearly with a drop in the number of witnesses and witnessed by others before and after the implementation of PoCv11.
 
-For countries in AS923 region where their local regulatory max EIRP limit that's between 25-27dBm, we can expect to see an increase of coverage area probably close to the same level as prior to PoCv11 (as the previous hardcoded EIRP limit was 27dBm).
+For countries in AS923 region where their local regulatory max EIRP limit that's between 25-27dBm, we can expect to see an increase of coverage area probably close to the same level as prior to PoCv11 (as the previous hardcoded EIRP limit was 27dBm) if this is implemented.
 
-This implementation can be extended to other regions as well (if required) 
+This implementation can be extended to other regions as well if needed.
 
 
 # Stakeholders
@@ -33,10 +33,10 @@ As this issue has been raised in this: https://github.com/helium/miner/issues/11
 # Detailed Explanation
 [detailed-explanation]: #detailed-explanation
 
-To implement country-specific EIRP limits via LoRaWAN subregions. Individual country EIRP max limit can be defined within the LoRaWAN subregion instead of a fixed value for the entire region.
+To implement country-specific EIRP limits via LoRaWAN subregions settings. Individual country EIRP max limit can be defined within the LoRaWAN subregion instead of a fixed value for the entire region.
 
-For countries that do not have a subregion max EIRP limit value defined, it should then fall back to the default regional max EIRP limit value of 16dBm.
-This can be extended to any region outside of AS923 if such an issue exists for other regions as well.
+For countries that do not have a subregion max EIRP limit value defined, it should then fall back to the default regional max EIRP limit value (i.e. 16dBm).
+This can be extended to any region outside of AS923 for that matter.
 
 The software probably needs to be written to the core blockchain. Software update deployed to all Hotspots, Validators, etc to support the new rules. This is consensus affecting so it needs to be a full deployment.
 
@@ -79,7 +79,7 @@ The subregion config will be transparent to existing users just like PoCv11.
 Users in countries with local regulatory EIRP limits higher than 16dBm with the LoRaWan subregion max EIRP values defined will experience improved coverage in general.
 
 - How will existing documentation/knowlegebase need to be supported?
-There will be an update required to document this LoRaWAN subregion max EIRP limit for the impacted countries in each region
+There will be an update required to document the LoRaWAN subregion max EIRP limits for the impacted countries in the region
 
 - Is this backwards compatible?
 Yes
