@@ -1,0 +1,1 @@
+# 0049-max-eirp-adjustment.md
