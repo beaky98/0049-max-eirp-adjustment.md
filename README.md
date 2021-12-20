@@ -15,7 +15,9 @@ This proposal suggests adopting a LoraWAN subregion config for max EIRP limit wh
 [motivation]: #motivation
 
 Helium aims to provide coverage as the people’s network and we are trying to help by restoring the coverage area in countries where the respective max EIRP limits are higher than the 16dBm (40mW) currently set for the entire AS923 region via PoCv11. It has since reduced the coverage area significantly and the effects can be seen clearly with a drop in the number of witnesses and witnessed by others before and after the implementation of PoCv11.
+
 For countries in AS923 region where their max EIRP limit is between 25-27dBm, we can expect to see an increase of coverage area probably close to the same level as prior to PoCv11 (as the previous hardcoded EIRP limit was 27dBm).
+
 This implementation can be extended to other regions as well (if required) 
 
 
@@ -23,16 +25,21 @@ This implementation can be extended to other regions as well (if required)
 [stakeholders]: #stakeholders
 
 Hotspots in AS923 region where the local regulatory EIRP limit is higher than the current 16dBm EIRP limit set will benefit from this proposal. And this can be extended to regions that are affected.
+
 We have started to reach out to people in Helium discord regional channels: hk-hong-kong, id-indonesia, jp-japan, my-malaysia, ph-philippines, sg-singapore, th-thailand, tw-taiwan. 
+
 As this issue has been raised in this: https://github.com/helium/miner/issues/1105 , we will be contacting them via GitHub to solicit feedback on this HIP.
 
 # Detailed Explanation
 [detailed-explanation]: #detailed-explanation
 
 To implement country-specific EIRP limits via LoRaWAN subregions. Individual country EIRP max limit can be defined within the LoRaWAN subregion instead of a fixed value for the entire region.
+
 For countries that do not have a subregion max EIRP limit value defined, it should then fall back to the default regional max EIRP limit value of 16dBm.
 This can be extended to any region outside of AS923 if such an issue exists for other regions as well.
+
 The software probably needs to be written to the core blockchain. Software update deployed to all Hotspots, Validators, etc to support the new rules. This is consensus affecting so it needs to be a full deployment.
+
 The LoRaWAN committee of the DeWI needs to propose and manage the subregion settings. They could also propose initial chain variables. These variables should be maintained by the LoRaWan committee on an ongoing basis.
 
 
@@ -45,6 +52,7 @@ TBD
 [alternatives]: #rationale-and-alternatives
 
 We have explored the possibility of including this as part of HIP45 as it is the closest HIP with regards to country-specific values.
+
 However considering that is addressing the frequency plan selection for different countries rather than max EIRP limits, it may further complicate things/the deployment process and might not be the best way to implement this hence we have drafted this new HIP for consideration/implementation.
 
 # Unresolved Questions
