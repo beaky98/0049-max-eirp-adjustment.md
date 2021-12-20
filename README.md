@@ -1,6 +1,6 @@
 # HIP 49: LoRaWAN Sub-region Max EIRP Limit
 
-- Author(s): [@beaky98](https://github.com/beaky98) [@resyncX](https://github.com/resyncX) [@AnhTuDo1998](https://github.com/AnhTuDo1998)
+- Author(s): [@beaky98](https://github.com/beaky98) [@resyncX](https://github.com/resyncX) [@AnhTuDo1998](https://github.com/AnhTuDo1998)[Trinitrophenol81](https://github.com/Trinitrophenol81)
 - Start Date: 2021-12-20
 - Category: technical
 - Original HIP PR: <!-- leave this empty; maintainer will fill in ID of this pull request -->
