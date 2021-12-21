@@ -20,7 +20,6 @@ For countries in AS923 region where their local regulatory max EIRP limit that's
 
 This implementation can be extended to other regions as well if needed.
 
-
 # Stakeholders
 [stakeholders]: #stakeholders
 
@@ -41,7 +40,6 @@ This can be extended to any region outside of AS923 for that matter.
 The software probably needs to be written to the core blockchain. Software update deployed to all Hotspots, Validators, etc to support the new rules. This is consensus affecting so it needs to be a full deployment.
 
 The LoRaWAN committee of the DeWI needs to propose and manage the subregion settings. They could also propose initial chain variables. These variables should be maintained by the LoRaWan committee on an ongoing basis.
-
 
 # Drawbacks
 [drawbacks]: #drawbacks
@@ -71,33 +69,21 @@ However, considering HIP45 is addressing the frequency plan selection for differ
 # Deployment Impact
 [deployment-impact]: #deployment-impact
 
-Describe how this design will be deployed and any potential impact it may have on
-current users of this project.
-
-- How will current users be impacted?
 The subregion config will be transparent to existing users just like PoCv11.
+
 Users in countries with local regulatory EIRP limits higher than 16dBm with the LoRaWan subregion max EIRP values defined will experience improved coverage in general.
 
-- How will existing documentation/knowlegebase need to be supported?
 There will be an update required to document the LoRaWAN subregion max EIRP limits for the impacted countries in the region
 
-- Is this backwards compatible?
-Yes
-
-        - If not, what is the procedure to migrate?
+This should be backwards compatible, as this could simply revert back to the previous 16dBm limit from LoRaWan committee.
 
 # Success Metrics
 [success-metrics]: #success-metrics
 
-What metrics can be used to measure the success of this design?
+To verify whether there is an increase in performance:
+- Increased in coverage area
+- Increase in number of witnesses and witnessed others with the same existing setup
 
-- What should we measure to prove a performance increase?
- Increased in coverage area; Increase in number of witnesses and witnessed others with the same existing setup
+To prove an improvement in stability, this will be similar to how it is done with PoCv11
 
-- What should we measure to prove an improvement in stability?
- Similar to how it is done with PoCv11
-
-- What should we measure to prove a reduction in complexity?
-
-- What should we measure to prove an acceptance of this by it's users?
- A poll perhaps
+A poll could be raised to prove an acceptance of this by users
