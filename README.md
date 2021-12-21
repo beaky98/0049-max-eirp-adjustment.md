@@ -16,7 +16,7 @@ This proposal suggests adopting a LoRaWAN subregion config for max EIRP limit wh
 
 Helium aims to provide coverage as the people’s network and we are trying to help by restoring the coverage area in countries where the respective max EIRP limits are higher than the 16dBm (40mW) currently set for the entire AS923 region via PoCv11. It has since reduced the coverage area significantly and the effects can be seen clearly with a drop in the number of witnesses and witnessed by others before and after the implementation of PoCv11.
 
-For countries in AS923 region where their local regulatory max EIRP limit that's between 25-27dBm, we can expect to see an increase of coverage area probably close to the same level as prior to PoCv11 (as the previous hardcoded EIRP limit was 27dBm) if this is implemented.
+For countries in the AS923 region where their local regulatory max EIRP limit that's between 25-27dBm, we can expect to see an increase of coverage area probably close to the same level as before PoCv11 (as the previous hardcoded EIRP limit was 27dBm) if this is implemented.
 
 This implementation can be extended to other regions as well if needed.
 
@@ -27,7 +27,7 @@ Hotspots owners in AS923 region where the local regulatory EIRP limit is higher 
 
 We have started to reach out to people in Helium discord regional channels: hk-hong-kong, id-indonesia, jp-japan, my-malaysia, ph-philippines, sg-singapore, th-thailand, tw-taiwan. 
 
-As this issue has been raised in this: https://github.com/helium/miner/issues/1105 , we will be contacting them via GitHub to solicit feedback on this HIP.
+As this issue has been raised in this: https://github.com/helium/miner/issues/1105, we will be contacting them via GitHub to solicit feedback on this HIP.
 
 # Detailed Explanation
 [detailed-explanation]: #detailed-explanation
@@ -77,6 +77,6 @@ To verify whether there is an increase in performance, we have to see:
 - Increased in the coverage area
 - Increase in number of witnesses and witnessed others with the same existing setup
 
-To prove an improvement stability, this will be similar to how it is done with PoCv11
+To prove an improvement of stability, this will be similar to how it is done with PoCv11
 
 A poll could be raised to prove an acceptance of this by users
