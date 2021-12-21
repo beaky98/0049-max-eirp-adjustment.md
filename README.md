@@ -2,7 +2,7 @@
 
 - Author(s): [@beaky98](https://github.com/beaky98) [@resyncX](https://github.com/resyncX) [@AnhTuDo1998](https://github.com/AnhTuDo1998) [@Trinitrophenol81](https://github.com/Trinitrophenol81)
 - Start Date: 2021-12-20
-- Category: technical
+- Category: Technical
 - Original HIP PR: <!-- leave this empty; maintainer will fill in ID of this pull request -->
 - Tracking Issue: <!-- leave this empty; maintainer will create a discussion issue -->
 
@@ -80,7 +80,7 @@ This should be backwards compatible, as this could simply revert back to the pre
 # Success Metrics
 [success-metrics]: #success-metrics
 
-To verify whether there is an increase in performance:
+To verify whether there is an increase in performance, we have to see:
 - Increased in coverage area
 - Increase in number of witnesses and witnessed others with the same existing setup
 
