@@ -56,7 +56,7 @@ However, considering HIP45 is addressing the frequency plan selection for differ
 # Unresolved Questions
 [unresolved]: #unresolved-questions
 
-Under the [detailed-explanation]: #detailed-explanation , how can we support the LoRaWAN committe of DeWI?
+Under the [detailed-explanation], how can we support the LoRaWAN committe of DeWI?
 - Such as by giving them the initial supporting links and official documents needed for the sub-region max EIRP. 
 
 # Deployment Impact
