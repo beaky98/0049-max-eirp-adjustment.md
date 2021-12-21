@@ -56,15 +56,8 @@ However, considering HIP45 is addressing the frequency plan selection for differ
 # Unresolved Questions
 [unresolved]: #unresolved-questions
 
-- What parts of the design do you expect to resolve through the HIP process
-  before this gets merged?
-
-- What parts of the design do you expect to resolve through the implementation
-  of this feature?
-
-- What related issues do you consider out of scope for this HIP that could be
-  addressed in the future independently of the solution that comes out of this
-  HIP?
+Under the [detailed-explanation]: #detailed-explanation , how can we support the LoRaWAN committe of DeWI?
+- Such as by giving them the initial supporting links and official documents needed for the sub-region max EIRP. 
 
 # Deployment Impact
 [deployment-impact]: #deployment-impact
