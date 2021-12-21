@@ -56,8 +56,8 @@ However, considering HIP45 is addressing the frequency plan selection for differ
 # Unresolved Questions
 [unresolved]: #unresolved-questions
 
-Under the [detailed-explanation], how can we support the LoRaWAN committe of DeWI?
-- Such as by giving them the initial supporting links and official documents needed for the sub-region max EIRP. 
+Under the [detailed-explanation], how can we support the LoRaWAN committee of DeWI? 
+- Such as by giving them the initial supporting links and official documents needed for the sub-region max EIRP.
 
 # Deployment Impact
 [deployment-impact]: #deployment-impact
@@ -68,15 +68,15 @@ Users in countries with local regulatory EIRP limits higher than 16dBm with the 
 
 There will be an update required to document the LoRaWAN subregion max EIRP limits for the impacted countries in the region
 
-This should be backwards compatible, as this could simply revert back to the previous 16dBm limit from LoRaWan committee.
+This should be backward compatible, as this could simply revert back to the 16dBm limit previously set by the LoRaWan committee.
 
 # Success Metrics
 [success-metrics]: #success-metrics
 
 To verify whether there is an increase in performance, we have to see:
-- Increased in coverage area
+- Increased in the coverage area
 - Increase in number of witnesses and witnessed others with the same existing setup
 
-To prove an improvement in stability, this will be similar to how it is done with PoCv11
+To prove an improvement stability, this will be similar to how it is done with PoCv11
 
 A poll could be raised to prove an acceptance of this by users
