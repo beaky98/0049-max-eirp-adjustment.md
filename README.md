@@ -9,7 +9,7 @@
 # Summary
 [summary]: #summary
 
-This proposal suggests adopting a LoraWAN subregion config for max EIRP limit which will allow individual countries within an RF region i.e. AS923 to define max EIRP limit based on each country’s local regulation instead of a single max EIRP limit across the entire AS923 as a result of PoCv11.
+This proposal suggests adopting a LoRaWAN subregion config for max EIRP limit which will allow individual countries within an RF region i.e. AS923 to define max EIRP limit based on each country’s local regulation instead of a single max EIRP limit across the entire AS923 as a result of PoCv11.
 
 # Motivation
 [motivation]: #motivation
